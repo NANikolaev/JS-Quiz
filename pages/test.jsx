@@ -1,22 +1,15 @@
-import dynamic from "next/dynamic";
+import Test from "@/components/Test/Test"
 
-const DynamicComponent = dynamic(() => import('../components/Test/Test'), { ssr: false })
+export const getStaticProps = async () => {
 
-export const getStaticProps = () => {
-
-  return fetch('https://quizapi.io/api/v1/questions?apiKey=CZUKtuyysltMbckdmRlyry3LED4F5kqR2FSVC7Vz&limit=10&tags=JavaScript')
-    .then(res => res.json())
-    .then(questions => {
-      return {
-        props: {
+  const response = await fetch('https://quizapi.io/api/v1/questions?apiKey=CZUKtuyysltMbckdmRlyry3LED4F5kqR2FSVC7Vz&limit=10&tags=JavaScript');
+  const questions = await response.json()
+  return {
+      props: {
           questions,
-        },
-      }
-    })
-};
+      },
 
-function Test({ questions }) {
-  return <DynamicComponent questions={questions} />
+  }
 }
 
 export default Test
