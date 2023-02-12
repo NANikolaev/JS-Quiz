@@ -6,4 +6,4 @@ If the user isn’t able to answer a question on time, the quiz proceeds to the 
 ## Tech Stack
 React , Next.js , styled-components, Framer Motion
 
-### `Link to project`- [JS Quiz](https://quizzz-js.netlify.app/)
+### Link to project - [JS Quiz](https://quizzz-js.netlify.app/)
