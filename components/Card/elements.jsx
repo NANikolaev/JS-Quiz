@@ -21,34 +21,10 @@ export const StyledArticle = styled(motion.article)`
   gap: 30px;
   background: var(--secondary-grey);
   width: 90%;
+  max-width: 750px;
   padding: 1% 2%;
   border-radius: 6px;
   box-shadow: 3px 4px 12px 3px rgb(255 255 255 / 75%); 
-
- @media screen and (min-width: 750px){
-   width:85%;
- }
- @media screen and (min-width: 850px){
-   width:75%;
- }
- @media screen and (min-width: 950px){
-   width:67%;
- }
- @media screen and (min-width: 1050px){
-   width: 61%;
- }
- @media screen and (min-width: 1200px){
-   width: 55%;
- }
- @media screen and (min-width: 1350px){
-   width: 50%;
- }
- @media screen and (min-width: 1500px){
-   width: 45%;
- }
- @media screen and (min-width: 1650px){
-   max-width: 750px;
- }
 `
 export const StyledBar = styled.div`
   height: 10px;

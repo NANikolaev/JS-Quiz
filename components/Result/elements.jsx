@@ -18,29 +18,12 @@ export const StyledSection = styled(motion.div)`
   overflow: hidden;
   gap: 30px;
   background: var(--lin-gradient);
-  width: 80%;
+  width: 90%;
+  max-width: 750px;
   min-height: 200px;
   padding: 1% 2%;
   border-radius: 6px;
   box-shadow: 3px 4px 12px 3px rgb(255 255 255 / 75%); 
-
-  @media screen and (min-width: 500px){
-   width: 70%;
- }
- @media screen and (min-width: 750px){
-   width: 60%;
- }
- @media screen and (min-width: 1200px){
-   width: 55%;
- }
- @media screen and (min-width: 1300px){
-   width: 50%;
- }
-
- @media screen and (min-width: 1500px){
-   width: 40%;
- }
-
 `
 export const StyledSubHeader=styled.h2`
  color: var(--primary-grey);

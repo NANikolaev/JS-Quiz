@@ -12,7 +12,7 @@ const Card = ({
     const [answersArray, correctAnswer] = filterData(answers, correct_answers);
     const letters = ['a', 'b', 'c', 'd'];
     const timer = setTimeout(() => {
-        setIndex(index => index += 1)
+       setIndex(index => index += 1)
        setResponse(arr => [...arr, 'false'])
     }, 30000);
 
